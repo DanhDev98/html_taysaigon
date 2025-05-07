@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf5;
+}
+
+.banner {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: float 3s ease-in-out infinite;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.section-title {
+    border-left: 4px solid red;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.card-3d {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(255, 80, 100, 0.4);
+    border-color: #dd2476;
+}

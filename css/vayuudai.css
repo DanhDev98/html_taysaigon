@@ -1,9 +1,9 @@
-body {
+/* body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-}
+} */
 
 .hero {
     background: url('https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center/cover no-repeat;
@@ -13,7 +13,7 @@ body {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -23,29 +23,13 @@ body {
     padding: 0 20px;
 }
 
-.overlay h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    animation: fadeInUp 1s ease-in-out;
-}
 
 .overlay p {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
-
-.btn {
-    background: #ff5722;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #e64a19;
+.overlay h1 {
+    color: bisque;
 }
 
 .benefits {
@@ -78,7 +62,7 @@ body {
 .card img {
     width: 60px;
     height: 60px;
-    margin-bottom: 10px;
+    margin: 10px auto;
 }
 
 .form-section {
@@ -87,34 +71,7 @@ body {
     text-align: center;
 }
 
-form input,
-form button {
-    display: block;
-    width: 300px;
-    max-width: 90%;
-    margin: 10px auto;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
 
-form button {
-    background: #388e3c;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #2e7d32;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: #ccc;
-}
 
 @keyframes fadeInUp {
     from {
