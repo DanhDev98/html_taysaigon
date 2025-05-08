@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>tindungTaySaiGon</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .guide-box {
+            border: 5px solid #dc3545;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .guide-title {
+            color: #ffc107;
+            font-weight: bold;
+            text-shadow: 1px 1px #000;
+            font-size: 2.5rem;
+        }
+
+        .guide-subtitle {
+            color: #28a745;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .instruction {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .instruction strong {
+            color: #dc3545;
+        }
+
+        .instruction .cmd {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+
+
+        .footer-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #d91a1a;
+            text-shadow: 1px 1px #fff;
+        }
+
+        .icon-box {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #ffc107;
+        }
+
+        .image-banner {
+            width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary text-white d-none d-lg-flex wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-2 ">
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <!-- <h2 class="text-white fw-bold m-0">WELDORK</h2> -->
+                    <img src="https://tindungtaysaigon.com/quanly/img/logo/16017891741601547718Artboard 12logo QTD chan trang.png"
+                        alt="" class="img-fluid" style="max-width: 80px; height: auto;">
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>2276 Vĩnh Lộc, Ấp 4, X. Vĩnh Lộc B, H.
+                        Bình Chánh</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>quytindungtaysaigon@gmail.com</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>028.3765.6224</small>
+                    <div class="ms-3 d-flex">
+                        <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <img src="https://tindungtaysaigon.com/quanly/img/logo/16017891741601547718Artboard 12logo QTD chan trang.png"
+                        alt="" class="img-fluid" style="max-width: 80px; height: auto;">
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+                        <!-- <a href="about.html" class="nav-item nav-link">Tổng quan</a> -->
+                        <!-- <a href="service.html" class="nav-item nav-link">Dịch vụ</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dịch vụ</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="chuyentiennhanh.html" class="dropdown-item">Chuyển tiền nhanh</a>
+                                <a href="thanhtoandiennuoc.html" class="dropdown-item">Thanh toán điện nước</a>
+                                <a href="baoquantaisan.html" class="dropdown-item">Bảo quản tài sản</a>
+                                <a href="dangkydichvu.html" class="dropdown-item">Đăng ký dịch vụ</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Vay vốn</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="vayuudai.html" class="dropdown-item">Vay ưu đãi</a>
+                                <a href="vaytinchap.html    " class="dropdown-item">Vay tín chấp</a>
+                                <a href="404.html" class="dropdown-item">Vay cầm cố sổ gửi tiền tiết kiệm</a>
+                                <a href="404.html" class="dropdown-item">Vay thế chấp quyền sử dụng đất</a>
+                                <a href="404.html" class="dropdown-item">Hướng dẫn chuyển khoản trả lãi, gốc</a>
+                                <a href="404.html" class="dropdown-item">Đăng ký vay vốn</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gửi tiền tiết
+                                kiệm</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="404.html" class="dropdown-item">Bảng lãi suất tiền gửi tiết kiệm</a>
+                                <a href="tracuutaikhoan.html" class="dropdown-item">Hướng dẫn tra cứu tài khoản</a>
+                                <a href="404.html" class="dropdown-item">Đăng ký gửi tiền</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Thông tin</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="404.html" class="dropdown-item">Về quỹ tín dụng Tây Sài Gòn</a>
+                                <a href="404.html" class="dropdown-item">Góp ý</a>
+                                <a href="404.html" class="dropdown-item">Tuyển dụng</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hỗ trợ</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="404.html" class="dropdown-item">Câu hỏi thường gặp</a>
+                                <a href="404.html" class="dropdown-item">Biểu mẫu</a>
+                                <a href="contact.html" class="dropdown-item">Liên hệ</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tin tức - Sự kiện</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="404.html" class="dropdown-item">Văn bản Pháp Luật</a>
+                                <a href="404.html" class="dropdown-item">Tin tức Chi Bộ</a>
+                                <a href="404.html" class="dropdown-item">Tin tức Công Đoàn</a>
+                                <a href="404.html" class="dropdown-item">Tài liệu nghiệp vụ</a>
+                                <a href="404.html" class="dropdown-item">Tài liệu Đại Hội Nhiệm Kỳ 2025 - 2030</a>
+                            </div>
+                        </div>
+                        <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                    </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <a href="" class="btn btn-primary py-2 px-3"><i class="fas fa-search"></i></a>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="container py-5">
+        <img src="https://quytindungthaihoa.vn/wp-content/uploads/2020/09/unnamed-13-768x804.jpg" alt="Tra cứu"
+            class="image-banner mx-auto d-block wow fadeInDown" data-wow-delay="0.7s" style="">
+        <div class="guide-box text-center wow fadeInUp" data-wow-delay="0.7s">
+            <div class="guide-title"><i class="fas fa-search-dollar icon-box"></i> HƯỚNG DẪN</div>
+            <div class="guide-subtitle">Tra cứu tiền gửi tiết kiệm</div>
+
+            <div class="instruction">
+                <i class="fas fa-star text-warning"></i> <strong>Tra cứu số dư theo sổ tiết kiệm:</strong><br>
+                <span class="cmd">QTD TAYSAIGON [SỐ SỔ TIẾT KIỆM]</span> → Gửi <strong>8249</strong>
+            </div>
+
+            <div class="instruction">
+                <i class="fas fa-star text-warning"></i> <strong>Tra cứu tổng số dư tiền gửi:</strong><br>
+                <span class="cmd">QTD TAYSAIGON TGTK [MÃ KHÁCH HÀNG]</span> → Gửi <strong>8249</strong>
+            </div>
+
+            <div class="instruction">
+                <i class="fas fa-star text-warning"></i> <strong>Tra cứu tổng số sổ tiền gửi:</strong><br>
+                <span class="cmd">QTD TAYSAIGON TGSOTK [MÃ KHÁCH HÀNG]</span> → Gửi <strong>8249</strong>
+            </div>
+
+            <div class="mt-4 footer-number">
+                ✨ GỬI ĐẾN TỔNG ĐÀI: <span style="color: #ffc107">8249</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 text-uppercase mb-5">Khách hàng nói gì về chúng tôi</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-img">
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Võ Văn Tám</h5>
+                                    <span>Kĩ sư xây dựng</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dịch vụ tốt, đội ngữ tư vấn nhiệt tình.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Nguyễn Thị Mai</h5>
+                                    <span>Kinh doanh tự do</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Cảm ơn đội ngũ nhân viên đã giúp tôi vượt qua giai đoạn khó khăn về kinh tế
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Chú Tài</h5>
+                                    <span>Nhân viên văn phòng</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dịch vụ rất tốt.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Võ Thị Như Quỳnh</h5>
+                                    <span>Nhân viên quỹ</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Lãi suất tốt, minh bạch rõ ràng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pb-5">
+            <div class="bg-white p-5 mb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 text-uppercase mb-4">Đăng ký nhận bản tin</h1>
+                        <div class="d-flex">
+                            <i class="far fa-envelope-open fa-3x text-primary me-4"></i>
+                            <p class="fs-5 fst-italic mb-0">Cập nhật tin tức mới nhất từ Quỹ Tín Dụng – vay vốn ưu đãi,
+                                thông tin lãi suất và chính sách hỗ trợ thành viên.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control border-0 bg-light" id="mail"
+                                placeholder="Your Email">
+                            <label for="mail">Email của bạn</label>
+                        </div>
+                        <button class="btn btn-primary w-100 py-3" type="submit">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Trụ sở</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>2276 Vĩnh Lộc, Ấp 4, X. Vĩnh
+                        Lộc B,
+                        H. Bình Chánh, TP. HCM</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>028.3765.6224</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>quytindungtaysaigon@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Liên kết nhanh</h5>
+                    <a class="btn btn-link" href="">Về chúng tôi</a>
+                    <a class="btn btn-link" href="">Liên hệ với chúng tôi</a>
+                    <a class="btn btn-link" href="">Dịch vụ của chúng tôi</a>
+                    <a class="btn btn-link" href="">Điều khoản và điều kiện</a>
+                    <a class="btn btn-link" href="">Hỗ trợ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Giờ làm việc</h5>
+                    <p class="text-uppercase mb-0">Thứ 2 - Thứ 6</p>
+                    <p>09:00 sáng - 07:00 tối</p>
+                    <p class="text-uppercase mb-0">Thứ 7</p>
+                    <p>09:00 sáng - 12:00 trưa</p>
+                    <p class="text-uppercase mb-0">Chủ nhật</p>
+                    <p>Đóng cửa</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Thành viên</h5>
+                    <a class="btn btn-link" href="">Đại hội thành viên</a>
+                    <a class="btn btn-link" href="">Công bố thông tin</a>
+                    <a class="btn btn-link" href="">Báo cáo thường niên</a>
+                    <a class="btn btn-link" href="">Báo cáo tài chính</a>
+                    <a class="btn btn-link" href="">Điều lệ</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Gallery</h5>
+                    <div class="row g-1">
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">BeOneTech</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="fw-semi-bold" href="#">BeOneTech</a> Distributed by <a href="#"
+                        target="_blank">ThemeCustomTemplete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- zalo btn -->
+    <a href="https://zalo.me/yourzalonumber" target="_blank" class="zalo-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png"
+            alt="Zalo CSKH">
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
