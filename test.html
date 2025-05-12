@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slide Giới Thiệu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Tạo hiệu ứng linear gradient chuyển động */
+        .carousel-slide-custom {
+            position: relative;
+            background: linear-gradient(45deg, #ff4444, #dd0000);
+            color: white;
+            padding: 40px 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 420px;
+            overflow: hidden;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        /* Hiệu ứng chuyển động gradient */
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(45deg, #ff4444, #dd0000);
+            }
+
+            25% {
+                background: linear-gradient(45deg, #7ece23, #0d6588);
+            }
+
+            50% {
+                background: linear-gradient(45deg, #00dd00, #0044dd);
+            }
+
+            75% {
+                background: linear-gradient(45deg, #88246a, #a86619);
+            }
+
+            100% {
+                background: linear-gradient(45deg, #ff4444, #dd0000);
+            }
+        }
+
+        .carousel-slide-custom .content-left {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+        .carousel-slide-custom h3 {
+            color: yellow;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .carousel-slide-custom ul {
+            padding-left: 20px;
+            list-style-type: square;
+            font-size: 18px;
+            line-height: 1.5;
+            color: white;
+            font-weight: 500;
+        }
+
+        .carousel-slide-custom .content-right {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Cố định kích thước ảnh */
+        .carousel-slide-custom img {
+            width: 500px;
+            height: 300px;
+            /* Cố định chiều cao của ảnh */
+            object-fit: cover;
+            /* Đảm bảo ảnh không bị méo */
+            border: 5px solid white;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Đảm bảo chiều cao slide luôn cố định */
+        .carousel-item {
+            height: 420px;
+            /* Chiều cao cố định cho các slide */
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .carousel:hover .carousel-control-prev,
+        .carousel:hover .carousel-control-next {
+            opacity: 1;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-slide-custom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .carousel-slide-custom .content-left {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div id="carouselCustom" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="carousel-slide-custom">
+                        <div class="content-left">
+                            <h3>Vay thế chấp QSD Đất</h3>
+                            <ul>
+                                <li>Lãi suất thấp nhất thị trường</li>
+                                <li>Thời hạn vay từ 1 đến 3 năm</li>
+                                <li>Thời gian xét duyệt nhanh chóng</li>
+                                <li>Lãi suất linh hoạt</li>
+                                <li>Thông báo tự động qua tin nhắn</li>
+                            </ul>
+                        </div>
+                        <div class="content-right">
+                            <img src="https://quytindungthaihoa.vn/wp-content/uploads/2020/10/dieu-kien-vay-the-chap-so-do.jpg"
+                                alt="Vay QSD Đất" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="carousel-slide-custom">
+                        <div class="content-left">
+                            <h3>Vay mua xe ô tô</h3>
+                            <ul>
+                                <li>Hỗ trợ đến 80% giá trị xe</li>
+                                <li>Thời hạn vay linh hoạt đến 7 năm</li>
+                                <li>Phê duyệt nhanh trong 24 giờ</li>
+                                <li>Không cần thế chấp tài sản khác</li>
+                                <li>Lãi suất ưu đãi theo tháng</li>
+                            </ul>
+                        </div>
+                        <div class="content-right">
+                            <img src="https://quytindungthaihoa.vn/wp-content/uploads/2020/10/vay247-vay-the-chap-so-do56-1024x556.jpg"
+                                alt="Vay mua xe" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="carousel-slide-custom">
+                        <div class="content-left">
+                            <h3>Vay tiêu dùng cá nhân</h3>
+                            <ul>
+                                <li>Không cần tài sản đảm bảo</li>
+                                <li>Hạn mức đến 100 triệu đồng</li>
+                                <li>Thủ tục đơn giản, nhận tiền nhanh</li>
+                                <li>Trả góp linh hoạt hằng tháng</li>
+                                <li>Hỗ trợ khách hàng mọi lúc</li>
+                            </ul>
+                        </div>
+                        <div class="content-right">
+                            <img src="https://quytindungthaihoa.vn/wp-content/uploads/2020/10/the-chap-quyen-su-dung-dat-de-vay-von-ngan-hang.jpg"
+                                alt="Vay tiêu dùng" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Nút điều hướng -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCustom" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCustom" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- Dấu chấm -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCustom" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCustom" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCustom" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

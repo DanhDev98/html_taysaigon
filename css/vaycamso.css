@@ -1,0 +1,162 @@
+.highlight-section {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.highlight-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.highlight-content {
+    padding-top: 20px;
+}
+
+.benefit-box {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.3s ease-in-out;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.benefit-box:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(90deg, #ff512f, #7c1c47) 1;
+    box-shadow: 0 0 15px rgba(255, 81, 47, 0.5);
+    cursor: pointer;
+}
+
+
+.section-title {
+    background-color: #ffe5e5;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-left: 5px solid red;
+    margin-top: 40px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Tạo hiệu ứng linear gradient chuyển động */
+.carousel-slide-custom {
+    position: relative;
+    background: linear-gradient(45deg, #ff4444, #dd0000);
+    color: white;
+    padding: 40px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    overflow: hidden;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Hiệu ứng chuyển động gradient */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff4444, #dd0000);
+    }
+
+    25% {
+        background: linear-gradient(45deg, #7ece23, #0d6588);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #00dd00, #0044dd);
+    }
+
+    75% {
+        background: linear-gradient(45deg, #88246a, #a86619);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #ff4444, #dd0000);
+    }
+}
+
+.carousel-slide-custom .content-left {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.carousel-slide-custom h3 {
+    color: yellow;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.carousel-slide-custom ul {
+    padding-left: 20px;
+    list-style-type: square;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    font-weight: 500;
+}
+
+.carousel-slide-custom .content-right {
+    flex: 1;
+    text-align: center;
+}
+
+/* Cố định kích thước ảnh */
+.carousel-slide-custom img {
+    width: 500px;
+    height: 300px;
+    /* Cố định chiều cao của ảnh */
+    object-fit: cover;
+    /* Đảm bảo ảnh không bị méo */
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Đảm bảo chiều cao slide luôn cố định */
+.carousel-item {
+    height: 420px;
+    /* Chiều cao cố định cho các slide */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-indicator [data-bs-target] {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .carousel-slide-custom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-slide-custom .content-left {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}

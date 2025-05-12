@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -30,7 +30,78 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/tuyendung.css">
+    <link rel="stylesheet" href="lib/slide/slide.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .guide-title {
+            font-size: 24px;
+            color: #d80000;
+            font-weight: bold;
+        }
+
+        .bank-info {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .guide-header img {
+            width: 60%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        .bank-account {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .label {
+            color: #004085;
+            font-weight: 600;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        .title-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+
+        .section-note {
+            font-size: 15px;
+            color: #333;
+        }
+
+        .footer-img {
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -102,9 +173,9 @@
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="vayuudai.html" class="dropdown-item">Vay ưu đãi</a>
                                 <a href="vaytinchap.html    " class="dropdown-item">Vay tín chấp</a>
-                                <a href="404.html" class="dropdown-item">Vay cầm cố sổ gửi tiền tiết kiệm</a>
-                                <a href="404.html" class="dropdown-item">Vay thế chấp quyền sử dụng đất</a>
-                                <a href="404.html" class="dropdown-item">Hướng dẫn chuyển khoản trả lãi, gốc</a>
+                                <a href="vaycamcoso.html" class="dropdown-item">Vay cầm cố sổ gửi tiền tiết kiệm</a>
+                                <a href="vaythechapQSD.html" class="dropdown-item">Vay thế chấp quyền sử dụng đất</a>
+                                <a href="huongdanck.html" class="dropdown-item">Hướng dẫn chuyển khoản trả lãi, gốc</a>
                                 <a href="dangkydichvu.html" class="dropdown-item">Đăng ký vay vốn</a>
                             </div>
                         </div>
@@ -122,7 +193,7 @@
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="404.html" class="dropdown-item">Về quỹ tín dụng Tây Sài Gòn</a>
                                 <a href="404.html" class="dropdown-item">Góp ý</a>
-                                <a href="404.html" class="dropdown-item">Tuyển dụng</a>
+                                <a href="tuyendung.html" class="dropdown-item">Tuyển dụng</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
@@ -154,99 +225,120 @@
         </div>
     </div>
     <!-- Navbar End -->
+    <!-- content huong dan -->
+    <div class="container py-5 ">
+        <div class="guide-header wow lightSpeedIn" data-wow-delay="0.2s">
+            <img src="https://timo.vn/wp-content/uploads/cach-lay-tien-chuyen-khoan-nham-tai-viet-nam.jpg"
+                alt="Chuyển khoản">
+            <div class="title-section">
+                <span>📌</span> HƯỚNG DẪN CHUYỂN KHOẢN
+            </div>
+        </div>
 
-    <div class="text-center mx-auto wow fadeInUp mt-5 mb-3" data-wow-delay="0.1s" style="max-width: 600px;">
-        <h1 class="display-6 text-uppercase ">Thông tin tuyển dụng</h1>
-        <h1 class="display-6 text-uppercase fs-5 ">Thử thách mới - Trải nghiệm mới - Bạn có dám thử</h1>
-    </div>
+        <div class="bank-info text-center wow fadeInUp" data-wow-delay="0.4s">
+            <div class="p-4">
+                <img src="https://tindungtaysaigon.com/quanly/img/logo/16017891741601547718Artboard%2012logo%20QTD%20chan%20trang.png"
+                    width="80" class="mb-2" alt="Logo Quỹ">
+                <h5 class="guide-title">HƯỚNG DẪN<br>CHUYỂN KHOẢN TRẢ LÃI, GỐC</h5>
 
+                <div class="mt-4 text-start">
+                    <p class="label"><span class="icon">⭐</span> NỘI DUNG CHUYỂN KHOẢN</p>
+                    <p class="section-note">[CK_TRẢ LÃI/GỐC_SỐ HĐTD_TÊN NGƯỜI VAY]</p>
 
-    <div class="d-flex flex-wrap justify-content-center container">
-        <div class="flip-container wow fadeInLeft" data-wow-delay="0.4s">
-            <div class="job-box">
-                <div class="job-front"
-                    style="background-image: url('https://tindungtaysaigon.com/quanly/uploads/recruiment/large/5431668746056.png'); background-size: cover; background-position: center center; background-size: contain ; background-repeat: no-repeat;">
-                </div>
-                <div class="job-back">
-                    <div class="company">Quỹ tín dụng nhân dân Tây Sài Gòn tuyển dụng</div>
-                    <h4 class="text-uppercase">Trưởng phòng tín dụng</h4>
-                    <p><strong>Ngày đăng tuyển:</strong> 18/11/2022</p>
-                    <p><strong>Ngày hết hạn:</strong> 31/12/2022</p>
-                    <a class="btn btn-primary w-30% py-1 mt-2 ">Nộp hồ sơ</a>
+                    <p class="label mt-4"><span class="icon">🔁</span> CHUYỂN VỀ MỘT TRONG HAI TÀI KHOẢN SAU</p>
+
+                    <p class="bank-account"><span class="highlight">➤ 1231231231231</span><br>NGÂN HÀNG BIDV - CHI NHÁNH
+                        PHÚ QUÝ</p>
+
+                    <p class="bank-account"><span class="highlight">➤ 3123123123123123123123</span><br>NGÂN HÀNG HỢP TÁC
+                        XÃ
+                        VIỆT NAM</p>
                 </div>
             </div>
-        </div>
-        <div class="flip-container wow fadeInLeft" data-wow-delay="0.4s">
-            <div class="job-box">
-                <div class="job-front"
-                    style="background-image: url('https://tindungtaysaigon.com/quanly/uploads/recruiment/large/5711636617116.jpg'); background-size: cover; background-position: center center; background-size: contain ; background-repeat: no-repeat;">
-                </div>
-                <div class="job-back">
-                    <div class="company">Quỹ tín dụng nhân dân Tây Sài Gòn tuyển dụng</div>
-                    <h4 class="text-uppercase">Kế Toán Trưởng</h4>
-                    <p><strong>Ngày đăng tuyển:</strong> 18/11/2022</p>
-                    <p><strong>Ngày hết hạn:</strong> 31/12/2022</p>
-                    <a class="btn btn-primary w-30% py-1 mt-2 ">Nộp hồ sơ</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container wow fadeInLeft" data-wow-delay="0.4s">
-            <div class="job-box">
-                <div class="job-front"
-                    style="background-image: url('https://tindungtaysaigon.com/quanly/uploads/recruiment/large/6931636605348.jpg'); background-size: cover; background-position: center center; background-size: contain ; background-repeat: no-repeat;">
-                </div>
-                <div class="job-back">
-                    <div class="company">Hệ thống luật thịnh trí tuyển dụng</div>
-                    <h4 class="text-uppercase">CTV viết bài Website</h4>
-                    <p><strong>Ngày đăng tuyển:</strong> 18/11/2022</p>
-                    <p><strong>Ngày hết hạn:</strong> 31/12/2022</p>
-                    <a class="btn btn-primary w-30% py-1 mt-2 ">Nộp hồ sơ</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container wow fadeInRight" data-wow-delay="0.6s">
-            <div class="job-box">
-                <div class="job-front"
-                    style="background-image: url('https://tindungtaysaigon.com/quanly/uploads/recruiment/large/5471625122313.jpg'); background-size: cover; background-position: center center; background-size: contain ; background-repeat: no-repeat;">
-                </div>
-                <div class="job-back">
-                    <div class="company">Công ty đấu giá hợp danh Thịnh Trí tuyển dụng</div>
-                    <h4 class="text-uppercase">Thư ký nghiệp vụ đấu giá</h4>
-                    <p><strong>Ngày đăng tuyển:</strong> 18/11/2022</p>
-                    <p><strong>Ngày hết hạn:</strong> 31/12/2022</p>
-                    <a class="btn btn-primary w-30% py-1 mt-2 ">Nộp hồ sơ</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container wow fadeInRight" data-wow-delay="0.6s">
-            <div class="job-box">
-                <div class="job-front"
-                    style="background-image: url('https://tindungtaysaigon.com/quanly/uploads/recruiment/large/3511614660939.jpg'); background-size: cover; background-position: center center; background-size: contain ; background-repeat: no-repeat;">
-                </div>
-                <div class="job-back">
-                    <div class="company">Quỹ tín dụng nhân dân Tây Sài Gòn tuyển dụng</div>
-                    <h4 class="text-uppercase">Thủ quỹ và nhân viên tín dụng</h4>
-                    <p><strong>Ngày đăng tuyển:</strong> 18/11/2022</p>
-                    <p><strong>Ngày hết hạn:</strong> 31/12/2022</p>
-                    <a class="btn btn-primary w-30% py-1 mt-2 ">Nộp hồ sơ</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-container wow fadeInRight" data-wow-delay="0.6s">
-            <div class="job-box">
-                <div class="job-front"
-                    style="background-image: url('https://tindungtaysaigon.com/quanly/uploads/recruiment/large/2731625122229.jpg'); background-size: cover; background-position: center center; background-size: contain ; background-repeat: no-repeat;">
-                </div>
-                <div class="job-back">
-                    <div class="company">Hệ thống luật Thịnh trí tuyển dụng</div>
-                    <h4 class="text-uppercase">Nhân viên pháp lý</h4>
-                    <p><strong>Ngày đăng tuyển:</strong> 18/11/2022</p>
-                    <p><strong>Ngày hết hạn:</strong> 31/12/2022</p>
-                    <a class="btn btn-primary w-30% py-1 mt-2 ">Nộp hồ sơ</a>
-                </div>
-            </div>
+
+            <img src="https://t3.ftcdn.net/jpg/02/14/94/78/360_F_214947872_0buOruh9TiFyu9S3BT1sH6Bhvj6R2v0s.jpg"
+                alt="footer" class="footer-img wow fadeInRight" data-wow-delay="0.6s">
         </div>
     </div>
+    <!-- end content huong dan -->
+
+
+
+    <!-- News start -->
+    <div class="container-fluid service pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 text-uppercase mb-5">Tin tức và sự kiện</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="img/daihoidaibieu.png" alt="">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase fs-6">ĐẠI HỘI ĐẠI BIỂU THÀNH VIÊN 2024 NHIỆM KỲ 2023-2027 DIỄN
+                                    RA
+                                    TỐT ĐẸP</h4>
+                                    <p>Hỗ trợ khách hàng tiếp cận nguồn vốn với lãi suất cạnh tranh, thủ tục đơn giản và
+                                        giải ngân nhanh chóng.
+                                    </p>
+                            </div>
+                            <a class="btn btn-light px-3" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="img/nghile30_4.png" alt="">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase fs-6">LỊCH NGHỈ LỄ NGÀY GIẢI PHÓNG MIỀN NAM- QUỐC TẾ LAO ĐỘNG
+                                    30/4
+                                    - 01/05</h4>
+                                    <p>Quỹ tín dụng Nhân dân Tây Sài Gòn xin trân trọng thông báo đến ....
+                                    </p>
+                            </div>
+                            <a class="btn btn-light px-3" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="img/thongbaolai.png" alt="">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase fs-6">THÔNG BÁO LÃI SUẤT TIỀN GỬI TIẾT KIỆM TỪ NGÀY
+                                    01/04/2025
+                                    </h4>
+                                    <p>Qũy Tây Sài Gòn xin trân trọng thông báo đến quý khách hàng bảng L&Atild....
+                                    </p>
+                            </div>
+                            <a class="btn btn-light px-3" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="img/gioto.png" alt="">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase fs-6">LỊCH NGHỈ LỄ GIỖ TỔ HÙNG VƯƠNG 10/03 NĂM 2025</h4>
+                                    <p>THÔNG BÁO V/v: Lịch nghỉ Giỗ Tổ Hùng Vương 2025 (10/3 âm lịch) Quỹ t&iacu....
+                                    </p>
+                            </div>
+                            <a class="btn btn-light px-3" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News End -->
+
 
     <!-- Newsletter Start -->
     <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
@@ -371,11 +463,13 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
     <!-- zalo btn -->
     <a href="https://zalo.me/yourzalonumber" target="_blank" class="zalo-btn">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png"
             alt="Zalo CSKH">
     </a>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
