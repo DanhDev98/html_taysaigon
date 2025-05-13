@@ -573,3 +573,65 @@
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
+
+/* gopy */
+
+.feedback-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.feedback-header {
+    background: linear-gradient(to right, #f1c40f, #16a085);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.feedback-header img.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 50px;
+}
+
+.feedback-body {
+    padding: 40px 30px;
+}
+
+.form-control:focus {
+    border-color: #f1c40f;
+    box-shadow: 0 0 0 0.2rem rgba(241, 196, 15, 0.25);
+}
+
+.btn-submit {
+    background: #f1c40f;
+    border: none;
+    color: #222;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background: #e0b90d;
+}
+
+.feedback-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#successMessage {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .feedback-header img.logo {
+        height: 40px;
+    }
+}
