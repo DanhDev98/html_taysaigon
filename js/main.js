@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -38,9 +38,9 @@
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
-    
-    
+    }, { offset: '80%' });
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -50,7 +50,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -77,11 +77,86 @@
         loop: true,
         dots: false,
         nav: true,
-        navText : [
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ]
     });
-    
+
+    // star
+    const stars = document.querySelectorAll('#starRating .star');
+    const ratingInput = document.getElementById('rating');
+
+    let currentRating = 0;
+
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            currentRating = index + 1;
+            ratingInput.value = currentRating;
+            highlightStars(currentRating);
+        });
+
+        star.addEventListener('mouseover', () => {
+            highlightStars(index + 1);
+        });
+
+        star.addEventListener('mouseout', () => {
+            highlightStars(currentRating);
+        });
+    });
+
+    function highlightStars(rating) {
+        stars.forEach((star, i) => {
+            star.classList.toggle('selected', i < rating);
+        });
+    };
+
+
+
+    // dieule img
+    const container = document.getElementById("pages");
+    const imageUrls = [
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-1.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-2.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-3.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-4.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-5.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-6.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-7.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-8.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-9.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-10.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-11.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-12.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-13.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-14.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-15.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-16.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-17.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-18.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-19.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-20.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-21.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-22.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-23.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-24.jpg',
+        'https://quanly.thinhtrigroup.com/uploads/content/images/dieu-le-quy-tin-dung-tay-sai-gon-25.jpg'
+    ];
+
+    imageUrls.forEach((url, index) => {
+        const div = document.createElement("div");
+        div.className = "page";
+
+        const img = document.createElement("img");
+        img.src = url;
+        img.alt = `Điều lệ trang ${index + 1}`;
+
+        div.appendChild(img);
+        container.appendChild(div);
+    });
+
+
+
+
 })(jQuery);
 

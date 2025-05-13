@@ -629,9 +629,255 @@
 #successMessage {
     display: none;
 }
+.star-rating .star {
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .star-rating .star.hover,
+  .star-rating .star.selected {
+    color: #f1c40f; /* vàng đầy */
+  }
+  
+  
 
 @media (max-width: 768px) {
     .feedback-header img.logo {
         height: 40px;
     }
+}
+/* thanhvien */
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #1abc9c;
+}
+
+.team-section p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+    border-top: 5px solid #f1c40f;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #f1c40f;
+}
+
+.team-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.team-contact {
+    font-size: 0.9rem;
+    color: #3498db;
+}
+.team-hotline {
+    font-size: 0.9rem;
+    color: #e67e22;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  
+
+.logo-top {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .team-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* dieule */
+.dieule {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.page {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.page img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.note {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+}
+/* Q&A */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.faq-container h1 {
+    color: #b50000;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #b50000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.faq-answer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.faq-banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+/* bieumau */
+.form-banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container h2 {
+    color: #b30000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.form-item {
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #f9f9f9;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-title:hover {
+    background: #f1f1f1;
+}
+
+.form-content {
+    display: none;
+    padding: 15px 20px;
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.form-content a {
+    color: #b30000;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.form-item.active .form-content {
+    display: block;
 }

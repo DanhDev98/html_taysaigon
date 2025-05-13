@@ -196,6 +196,18 @@
                                 <option value="Khác">Khác</option>
                             </select>
                         </div>
+                        <div class="mb-3 wow fadeInRight" data-wow-delay="0.45s">
+                            <label class="form-label d-block">Đánh giá</label>
+                            <div id="starRating" class="star-rating">
+                                <i class="star bi bi-star-fill" data-value="1"></i>
+                                <i class="star bi bi-star-fill" data-value="2"></i>
+                                <i class="star bi bi-star-fill" data-value="3"></i>
+                                <i class="star bi bi-star-fill" data-value="4"></i>
+                                <i class="star bi bi-star-fill" data-value="5"></i>
+                            </div>
+                            <input type="hidden" id="rating" name="rating" value="0" />
+                        </div>
+
                         <div class="mb-3 wow fadeInRight" data-wow-delay="0.5s">
                             <label for="message" class="form-label">Nội dung góp ý</label>
                             <textarea class="form-control" id="message" rows="4" required
